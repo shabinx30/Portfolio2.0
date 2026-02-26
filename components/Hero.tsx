@@ -32,7 +32,7 @@ const Hero = () => {
         gsap.from(".image", {
             y: "100%",
         });
-        
+
         gsap.to(".image", {
             y: "0%",
             duration: 1.5,
@@ -65,11 +65,11 @@ const Hero = () => {
                 from={{ opacity: 0, y: 40 }}
                 to={{ opacity: 1, y: 0 }}
                 threshold={0.1}
-                // rootMargin="-100px"
-                // textAlign="center"
+                rootMargin="-100px"
+                textAlign="center"
             />
             <SplitText
-                text="I'M SHABEEN"
+                text={`I${'\u0027'}M SHABEEN`}
                 className="text-[#FF7C7C] text-8xl font-bold notable leading-16 parallax-name h-[1em]"
                 delay={75}
                 duration={1.5}
@@ -78,8 +78,8 @@ const Hero = () => {
                 from={{ opacity: 0, y: 40 }}
                 to={{ opacity: 1, y: 0 }}
                 threshold={0.1}
-                // rootMargin="-100px"
-                // textAlign="center"
+                rootMargin="-100px"
+                textAlign="center"
             />
             <Image
                 src="/Me_red_no_bg.png"
@@ -89,16 +89,16 @@ const Hero = () => {
                 height={100}
                 loading="eager"
                 priority
-                className="object-cover translate-y-full h-dvh w-dvw absolute top-0 left-0 image"
+                className="object-cover translate-y-full h-dvh w-dvw absolute top-0 left-0 image will-change-transform"
             />
-            <p className="absolute flex flex-col justify-center items-center gap-4 bottom-[6em] text-[#FFC7C7] text-xs font-bold notable scroll">
+            <p className="absolute flex flex-col justify-center items-center gap-4 bottom-[6em] text-[#FFC7C7] text-xs font-bold notable scroll will-change-transform">
                 SCROLL TO KNOW MORE ABOUT ME
                 <HiOutlineChevronDoubleDown
-                    className="animate-bounce"
+                    className="animate-bounce will-change-transform"
                     size={18}
                 />
             </p>
-            <p className="absolute bottom-[6em] right-[3em] w-[32em] text-center text-[#FFC7C7] text-xs font-bold notable scroll">
+            <p className="absolute bottom-[6em] right-[3em] w-[32em] text-center text-[#FFC7C7] text-xs font-bold notable scroll will-change-transform">
                 A Passionate{" "}
                 <span className="text-[#FF7C7C]">Full Stack Web Developer</span>
                 , specializing in the MERN stack, with expertise in MongoDB,
