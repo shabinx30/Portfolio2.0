@@ -23,7 +23,7 @@ const Shutter = () => {
     return (
         <div
             ref={shutterRef}
-            className="absolute h-dvh text-9xl inset-0 bg-[#FFC7C7] backdrop-blur-sm z-50 shutter will-change-transform"
+            className="absolute h-dvh text-9xl inset-0 bg-[#FFC7C7] backdrop-blur-sm z-999 will-change-transform"
         />
     );
 };
