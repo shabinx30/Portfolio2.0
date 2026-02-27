@@ -13,7 +13,12 @@ const Shutter = ({ isLoaded }: { isLoaded: boolean }) => {
 
         gsap.set(el, { yPercent: 0 });
 
-        const tl = gsap.timeline();
+        const tl = gsap.timeline({
+            onComplete: () => {
+                document.documentElement.style.overflowY = "scroll";
+                document.body.style.overflowY = "scroll";
+            },
+        });
 
         tl.to(el, {
             yPercent: -100,
