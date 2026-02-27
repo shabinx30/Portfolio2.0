@@ -1,14 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, useState } from "react";
 import gsap from "gsap";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi2";
 import Shutter from "./Shutter";
 import SplitText from "./animations/SplitText";
 
 const Hero = () => {
+    const [isLoaded, setIsLoaded] = useState(false);
+
     useLayoutEffect(() => {
+        if (!isLoaded) return;
+
         gsap.set(".parallax-hello", { y: -140 });
         gsap.to(".parallax-hello", {
             y: 100,
@@ -70,7 +74,7 @@ const Hero = () => {
             delay: 0.25,
             ease: "power4.out",
         });
-    }, []);
+    }, [isLoaded]);
 
     return (
         <section className="h-screen hero relative bg-[#220000] pl-10 overflow-hidden">
@@ -122,6 +126,7 @@ const Hero = () => {
                 width={100}
                 height={100}
                 loading="eager"
+                onLoadingComplete={() => setIsLoaded(true)}
                 priority
                 className="object-cover saturate-60 brightness-150 translate-y-full h-dvh w-dvw z-40 absolute top-0 left-0 image will-change-transform"
             />
