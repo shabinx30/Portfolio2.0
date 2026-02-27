@@ -7,7 +7,7 @@ export default function Home() {
             <Nav />
             <main>
                 <Hero />
-                <section className="h-[200em]"></section>
+                <section className="h-[200em] bg-[#220000]"></section>
             </main>
         </>
     );
