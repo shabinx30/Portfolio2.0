@@ -3,10 +3,12 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 
-const Shutter = () => {
+const Shutter = ({ isLoaded }: { isLoaded: boolean }) => {
     const shutterRef = useRef<HTMLDivElement>(null);
 
     useLayoutEffect(() => {
+        if (!isLoaded) return;
+
         const el = shutterRef.current;
 
         gsap.set(el, { yPercent: 0 });
@@ -18,7 +20,7 @@ const Shutter = () => {
             duration: 0.75,
             ease: "power4.out",
         });
-    }, []);
+    }, [isLoaded]);
 
     return (
         <div

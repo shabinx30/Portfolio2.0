@@ -78,7 +78,7 @@ const Hero = () => {
 
     return (
         <section className="h-screen hero relative bg-[#220000] pl-10 overflow-hidden">
-            <Shutter />
+            <Shutter isLoaded={isLoaded} />
             <div className="grain absolute inset-0 pointer-events-none z-30"></div>
             <SplitText
                 text="HELLO,"
