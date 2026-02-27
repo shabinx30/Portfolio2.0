@@ -46,7 +46,7 @@ const MajorCon = () => {
             );
         });
     }, [isLoaded]);
-    
+
     return (
         <>
             <Shutter isLoaded={isLoaded} />
@@ -54,7 +54,7 @@ const MajorCon = () => {
                 <>
                     <SplitText
                         text="HELLO,"
-                        className="text-[#FFC7C7] text-3xl notable parallax-hello absolute top-0"
+                        className="text-[#FFC7C7] md:text-3xl leading-16 md:leading-normal notable parallax-hello absolute top-0"
                         delay={75}
                         duration={1.5}
                         ease="power4.out"
@@ -67,7 +67,7 @@ const MajorCon = () => {
                     />
                     <SplitText
                         text={`I${"\u0027"}M SHABEEN`}
-                        className="text-[#FF7C7C] text-[6.6rem] font-bold notable leading-12 parallax-name h-[0.85em] absolute top-0"
+                        className="text-[#FF7C7C] text-4xl md:text-6xl lg:text-[6.6rem] font-bold notable md:leading-10 lg:leading-12 parallax-name md:h-[0.85em] absolute top-0"
                         delay={75}
                         duration={1.5}
                         ease="power4.out"
@@ -80,7 +80,7 @@ const MajorCon = () => {
                     />
                     <SplitText
                         text={`I${"\u0027"}M SHABEEN`}
-                        className="text-transparent text-[6.6rem] notable leading-12 parallax-name h-[0.85em] absolute top-0 z-41 custom-outline"
+                        className="text-transparent text-4xl md:text-6xl lg:text-[6.6rem] notable md:leading-10 lg:leading-12 parallax-name md:h-[0.85em] absolute top-0 z-41 custom-outline"
                         delay={75}
                         duration={1.5}
                         ease="power4.out"
@@ -93,17 +93,19 @@ const MajorCon = () => {
                     />
                 </>
             )}
-            <Image
-                src="/Me_red_no_bg.png"
-                alt="Hero"
-                unoptimized
-                width={100}
-                height={100}
-                loading="eager"
-                onLoadingComplete={() => setIsLoaded(true)}
-                priority
-                className="object-cover saturate-60 brightness-150 translate-y-full h-screen w-screen z-40 absolute top-0 left-0 image will-change-transform"
-            />
+            <div className="absolute bottom-0 left-0 w-full h-[75%] md:h-full flex items-end z-40 image will-change-transform translate-y-full">
+                <Image
+                    src="/Me_red_no_bg.png"
+                    alt="Hero"
+                    unoptimized
+                    width={100}
+                    height={100}
+                    loading="eager"
+                    onLoadingComplete={() => setIsLoaded(true)}
+                    priority
+                    className="object-cover saturate-60 brightness-150 w-full h-full"
+                />
+            </div>
         </>
     );
 };

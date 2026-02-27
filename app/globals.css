@@ -54,3 +54,11 @@ body {
 .custom-outline {
   -webkit-text-stroke: 2px #ff7e7e;
 }
+
+.custom-small-outline {
+  -webkit-text-stroke: 1px #FFC7C7;
+}
+
+.custom-small-outline-em {
+  -webkit-text-stroke: 1px #ff7e7e;
+}
