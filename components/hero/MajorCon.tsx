@@ -101,7 +101,7 @@ const MajorCon = () => {
                     width={100}
                     height={100}
                     loading="eager"
-                    onLoadingComplete={() => setIsLoaded(true)}
+                    onLoad={() => setIsLoaded(true)}
                     priority
                     className="object-cover saturate-60 brightness-150 w-full h-full"
                 />
