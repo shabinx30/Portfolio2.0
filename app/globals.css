@@ -21,6 +21,8 @@
 
 html {
   scrollbar-gutter: stable;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -71,12 +73,11 @@ body {
 }
 
 
-.carousel {
-  scroll-snap-type: x mandatory;
-}
 
 .project-item {
-  scroll-snap-align: center;
+  transform-origin: center;
+  transition: transform 0.1s linear;
+  transform: scale(0.5);
   flex: 0 0 300px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3)
 }
@@ -85,5 +86,4 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  clip-path: url(#adaptiveClip);
 }
