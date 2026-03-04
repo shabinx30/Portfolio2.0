@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Notable } from "next/font/google";
 import "./globals.css";
-import SmoothScroll from "@/components/SmoothScroll";
+import LenisProvider from "@/components/LenisProvider";
 
 const notable = Notable({
     weight: "400",
@@ -66,7 +66,7 @@ export default function RootLayout({
             <body
                 className={`${notable.variable} antialiased`}
             >
-                <SmoothScroll>{children}</SmoothScroll>
+                <LenisProvider>{children}</LenisProvider>
             </body>
         </html>
     );

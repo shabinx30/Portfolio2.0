@@ -1,11 +1,9 @@
 import { HiOutlineChevronDoubleDown } from "react-icons/hi2";
-import Grain from "./Grain";
 import MajorCon from "./MajorCon";
 
 const Hero = () => {
     return (
         <section className="h-screen hero relative bg-[#220000] pl-5 md:pl-10 overflow-hidden">
-            <Grain />
             <MajorCon />
             <p className="absolute flex flex-col z-45 md:z-10 w-full md:w-auto left-0 md:left-auto justify-center items-center gap-4 bottom-[6em] text-[#FFC7C7] text-[0.5rem] md:text-[0.6rem] notable scroll parallax-scroll will-change-transform">
                 SCROLL TO KNOW MORE ABOUT ME
