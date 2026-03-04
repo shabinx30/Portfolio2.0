@@ -1,0 +1,36 @@
+
+> portfolio@0.1.0 lint C:\Users\hp\Projects\portfolio
+> eslint
+
+
+C:\Users\hp\Projects\portfolio\components\Projects.tsx
+   3:10  warning  'useGSAP' is defined but never used                   @typescript-eslint/no-unused-vars
+  14:11  warning  'activeProject' is assigned a value but never used    @typescript-eslint/no-unused-vars
+  24:11  warning  'inactiveProject' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\hp\Projects\portfolio\components\SmoothScroll.tsx
+  17:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\hp\Projects\portfolio\components\animations\SplitText.tsx
+   52:13  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\hp\Projects\portfolio\components\animations\SplitText.tsx:52:13
+  50 |     useEffect(() => {
+  51 |         if (document.fonts.status === "loaded") {
+> 52 |             setFontsLoaded(true);
+     |             ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  53 |         } else {
+  54 |             document.fonts.ready.then(() => {
+  55 |                 setFontsLoaded(true);  react-hooks/set-state-in-effect
+   72:26  warning  '_' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+  153:26  warning  '_' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+
+Ô£û 7 problems (2 errors, 5 warnings)
+
+ÔÇëELIFECYCLEÔÇë Command failed with exit code 1.

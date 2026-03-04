@@ -4,11 +4,12 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import { useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { IoIosArrowRoundUp } from "react-icons/io";
 
 const Projects = () => {
     const shapeRef = useRef(null);
+    const projectsWrapperRef = useRef<HTMLDivElement>(null);
 
     const activeProject = () => {
         gsap.to(shapeRef.current, {
@@ -30,23 +31,20 @@ const Projects = () => {
         });
     };
 
-    useGSAP(() => {
-        const panels = gsap.utils.toArray(".project-item");
-        const totalWidth =
-            (panels.length / 2) * window.innerWidth + 3 * 16 * panels.length;
+    useLayoutEffect(() => {
+        if (!projectsWrapperRef.current) return;
 
-        gsap.to(".project-wrapper", {
-            x: -(totalWidth - window.innerWidth),
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".project-section",
-                start: "top top",
-                end:
-                    "+=" +
-                    document.querySelector(".project-wrapper")!.scrollWidth,
-                scrub: true,
-                pin: true,
-                anticipatePin: 1,
+        const ele = projectsWrapperRef.current;
+
+        ScrollTrigger.create({
+            trigger: ".project-section",
+            start: "top top",
+            end: () => "+=" + ele.scrollWidth,
+            pin: true,
+            scrub: true,
+            onUpdate: (self) => {
+                const maxScroll = ele.scrollWidth - window.innerWidth;
+                ele.scrollLeft = self.progress * maxScroll * 8;
             },
         });
     }, []);
@@ -67,12 +65,13 @@ const Projects = () => {
                     />
                 </clipPath>
             </svg>
-            <div className="max-w-[75%] overflow-x-auto rounded-[2.6rem]">
-                <div className="flex gap-[3em] project-wrapper will-change-transform">
-                    {new Array(3).fill(0).map((_, i) => (
-                        <ProjectItem key={i} />
-                    ))}
-                </div>
+            <div
+                ref={projectsWrapperRef}
+                className="max-w-[75%] flex gap-[3em] overflow-x-auto rounded-[2.6rem] will-change-scroll"
+            >
+                {new Array(3).fill(0).map((_, i) => (
+                    <ProjectItem key={i} />
+                ))}
             </div>
         </section>
     );
@@ -85,7 +84,6 @@ const ProjectItem = () => {
                 className="project-item-image z-20 duration-500 absolute inset-0"
                 src="/first_project.png"
                 alt="Conversation"
-                unoptimized
                 width={100}
                 height={100}
                 loading="lazy"
