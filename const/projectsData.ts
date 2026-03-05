@@ -18,7 +18,6 @@ export const projectsData = [
             "nest.js",
             "jwt",
             "redux",
-            "pwa",
         ],
     },
     {
