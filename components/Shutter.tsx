@@ -15,7 +15,6 @@ const Shutter = ({ isLoaded }: { isLoaded: boolean }) => {
 
         const tl = gsap.timeline({
             onComplete: () => {
-                document.documentElement.style.overflowY = "auto";
                 document.body.style.overflowY = "auto";
             },
         });

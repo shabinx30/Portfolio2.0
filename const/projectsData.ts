@@ -1,4 +1,4 @@
-export const projects = [
+export const projectsData = [
     {
         name: "Collabify",
         imageDark: "/project/second_project(dark).png",
