@@ -13,15 +13,17 @@ const Projects = () => {
     });
 
     return (
-        <motion.section ref={projectRef} className="mt-[50vh] px-24 relative">
+        <motion.section ref={projectRef} className="mt-[10vh] px-24 relative">
             {projectsData.map((project, index) => {
-                const targetScale = 1 - ((projectsData.length - index) * 0.05);
+                const targetScale = 1 - (projectsData.length - index) * 0.07;
+                const rangeStart = index / projectsData.length;
+                const rangeEnd = 1;
                 return (
                     <Card
                         {...project}
                         key={index}
                         index={index}
-                        range={[index * 0.25, 1]}
+                        range={[rangeStart, rangeEnd]}
                         progress={scrollYProgress}
                         targetScale={targetScale}
                     />
