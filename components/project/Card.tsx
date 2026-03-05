@@ -82,6 +82,7 @@ const Card = ({
                             alt="project image"
                             width={100}
                             height={100}
+                            loading="lazy"
                             unoptimized
                         />
                     </motion.div>
