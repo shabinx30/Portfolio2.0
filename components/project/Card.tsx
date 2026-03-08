@@ -44,7 +44,7 @@ const Card = ({
         >
             <motion.div
                 style={{ scale: cardScale, top: `calc(-10% + ${index * 24}px)` }}
-                className="w-full h-[65vh] bg-[#FF7C7C] relative overflow-hidden rounded-[3rem] flex flex-col lg:flex-row items-center p-6 border border-[#220000]"
+                className="w-full h-[65vh] bg-[#FF7C7C] relative overflow-hidden rounded-[3rem] flex flex-col lg:flex-row items-center p-6 border border-[#220000] will-change-transform"
             >
                 <div className="flex-1 flex flex-col gap-2 md:gap-4 xl:gap-6 pl-6 pr-8 text-black">
                     <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold notable mb-2.5 lg:mb-5">
@@ -74,7 +74,7 @@ const Card = ({
                 <div className="relative overflow-hidden flex-1/4 h-full min-w-1/4 rounded-4xl">
                     <motion.div
                         style={{ scale: imageScale }}
-                        className="h-full"
+                        className="h-full will-change-transform"
                     >
                         <Image
                             className="h-full w-full object-cover rounded-4xl"
