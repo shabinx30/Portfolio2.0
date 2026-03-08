@@ -13,7 +13,7 @@ const Projects = () => {
     });
 
     return (
-        <motion.section ref={projectRef} className="mt-[10vh] px-24 relative">
+        <motion.section ref={projectRef} className="mt-[10vh] px-[10%] relative">
             {projectsData.map((project, index) => {
                 const targetScale = 1 - (projectsData.length - index) * 0.07;
                 const rangeStart = index / projectsData.length;

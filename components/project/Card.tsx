@@ -44,24 +44,24 @@ const Card = ({
         >
             <motion.div
                 style={{ scale: cardScale, top: `calc(-10% + ${index * 24}px)` }}
-                className="w-full h-[65vh] bg-[#FF7C7C] relative rounded-[3rem] flex items-center p-6 border border-black"
+                className="w-full h-[65vh] bg-[#FF7C7C] relative overflow-hidden rounded-[3rem] flex flex-col lg:flex-row items-center p-6 border border-[#220000]"
             >
-                <div className="flex-1 flex flex-col gap-6 pl-6 pr-8 text-black">
-                    <h3 className="text-3xl font-semibold notable mb-5">
+                <div className="flex-1 flex flex-col gap-2 md:gap-4 xl:gap-6 pl-6 pr-8 text-black">
+                    <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold notable mb-2.5 lg:mb-5">
                         {name}
                     </h3>
-                    <p>{description}</p>
+                    <p className="text-sm lg:text-base">{description}</p>
                     <div className="flex gap-2 flex-wrap">
                         {techs.map((tech, index) => (
                             <span
-                                className="bg-[#FFC7C7] text-sm pt-0.5 pb-1 px-2.5 rounded-xl min-w-fit"
+                                className="bg-[#FFC7C7] text-xs md:text-sm pt-0.5 pb-1 px-2.5 rounded-xl min-w-fit"
                                 key={index}
                             >
                                 {tech}
                             </span>
                         ))}
                     </div>
-                    <div className="flex mt-5">
+                    <div className="flex mt-2.5 lg:mt-5">
                         <Link
                             href={git}
                             className="flex gap-2 items-center bg-black text-[#FFC7C7] rounded-xl px-5 py-2"
