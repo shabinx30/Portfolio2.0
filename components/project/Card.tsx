@@ -5,8 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { LuGithub } from "react-icons/lu";
 import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { IoArrowUpOutline } from "react-icons/io5";
+import { IoIosArrowRoundUp } from "react-icons/io";
 
 interface ICard extends IProject {
     index: number;
@@ -35,7 +36,7 @@ const Card = ({
         offset: ["start end", "start start"],
     });
 
-    const imageScale = useTransform(scrollYProgress, [0, 1], [1.5, 1]);
+    const imageOp = useTransform(scrollYProgress, [0, 1], [0, 1]);
     const cardScale = useTransform(progress, range, [1, targetScale]);
 
     return (
@@ -48,7 +49,7 @@ const Card = ({
                     scale: cardScale,
                     top: `calc(-10% + ${index * 24}px)`,
                 }}
-                className="w-full h-[80vh] lg:h-[65vh] bg-[#FF7C7C] relative overflow-hidden rounded-[3rem] flex flex-col lg:flex-row items-center p-6 border border-[#220000] will-change-transform"
+                className="w-full h-[65vh] bg-[#FF7C7C] relative overflow-hidden rounded-[3rem] flex flex-col lg:flex-row items-center p-6 border border-[#220000] will-change-transform"
             >
                 <div className="flex-1 flex flex-col gap-2 md:gap-4 xl:gap-6 lg:pl-6 lg:pr-8 text-black">
                     <h3 className="text-xl md:text-2xl lg:text-3xl text-center lg:text-left font-semibold notable mb-2.5 lg:mb-5">
@@ -78,13 +79,17 @@ const Card = ({
                         </Link>
                     </div>
                 </div>
-                <div className="relative overflow-hidden flex-1/4 h-full min-w-1/4 rounded-4xl mt-5 lg:mt-0">
+                <Link
+                    href={live}
+                    target="_blank"
+                    className="relative overflow-hidden flex-1/4 max-h-fit rounded-4xl mt-5 lg:mt-0"
+                >
                     <motion.div
-                        style={{ scale: imageScale }}
-                        className="h-full will-change-transform"
+                        style={{opacity: imageOp}}
+                        className="relative will-change-transform aspect-video"
                     >
                         <Image
-                            className="h-full w-full object-cover rounded-4xl"
+                            className="h-full w-full object-cover rounded-4xl mobile-clip"
                             src={(imageDark as string) || (image as string)}
                             alt="project image"
                             width={100}
@@ -92,8 +97,14 @@ const Card = ({
                             loading="lazy"
                             unoptimized
                         />
+                        <div className="absolute hidden lg:flex justify-center items-center w-[13.5%] h-[24%] rounded-full z-10 bg-[#FFC7C7] right-1 bottom-1">
+                            <IoIosArrowRoundUp
+                                size={46}
+                                className="text-black rotate-45"
+                            />
+                        </div>
                     </motion.div>
-                </div>
+                </Link>
                 <div className="flex lg:hidden justify-evenly w-full mt-2.5 lg:mt-5">
                     <Link
                         href={git}
