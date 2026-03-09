@@ -67,7 +67,7 @@ const MajorCon = () => {
                     />
                     <SplitText
                         text={`I${"\u0027"}M SHABEEN`}
-                        className="text-[#FF7C7C] text-4xl md:text-6xl lg:text-[6.6rem] font-bold notable md:leading-10 lg:leading-12 parallax-name md:h-[0.85em] absolute top-0 will-change-transform"
+                        className="text-[#FF7C7C] text-5xl md:text-6xl lg:text-[6.6rem] font-bold notable md:leading-10 lg:leading-12 parallax-name md:h-[0.85em] absolute top-0 will-change-transform"
                         delay={75}
                         duration={1.5}
                         ease="power4.out"
@@ -80,13 +80,13 @@ const MajorCon = () => {
                     />
                     <SplitText
                         text={`I${"\u0027"}M SHABEEN`}
-                        className="text-transparent text-4xl md:text-6xl lg:text-[6.6rem] notable md:leading-10 lg:leading-12 parallax-name md:h-[0.85em] absolute top-0 z-41 custom-outline will-change-transform"
+                        className="text-transparent text-5xl md:text-6xl lg:text-[6.6rem] notable md:leading-10 lg:leading-12 parallax-name md:h-[0.85em] absolute top-0 z-41 custom-outline will-change-transform"
                         delay={75}
                         duration={1.5}
                         ease="power4.out"
                         splitType="chars"
                         from={{ opacity: 0, y: 40 }}
-                        to={{ opacity: 0.6, y: 0 }}
+                        to={{ opacity: 1, y: 0 }}
                         threshold={0.1}
                         rootMargin="-100px"
                         textAlign="center"
@@ -106,6 +106,7 @@ const MajorCon = () => {
                     className="object-cover saturate-60 brightness-150 w-full h-full"
                 />
             </div>
+            <div className="absolute bg-linear-to-t from-[#220000] to-transparent bottom-0 left-0 w-full h-[25%] md:h-[30%] flex items-end z-41 image will-change-transform translate-y-full"></div>
         </>
     );
 };
