@@ -7,9 +7,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function LenisProvider({ children }: { children: ReactNode }) {
     useEffect(() => {
-        const isTouchDevice =
-            "ontouchstart" in window || navigator.maxTouchPoints > 0;
-        if (isTouchDevice) return;
 
         const lenis = new Lenis({
             duration: 0.75,
