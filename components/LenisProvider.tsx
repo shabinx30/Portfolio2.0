@@ -9,7 +9,7 @@ export default function LenisProvider({ children }: { children: ReactNode }) {
     useEffect(() => {
 
         const lenis = new Lenis({
-            duration: 0.75,
+            duration: 1,
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
             touchMultiplier: 2,
         });

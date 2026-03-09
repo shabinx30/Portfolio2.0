@@ -70,6 +70,7 @@ const Card = ({
                     <div className="hidden lg:flex mt-2.5 lg:mt-5">
                         <Link
                             href={git}
+                            target="_blank"
                             className="flex gap-2 items-center bg-black text-[#FFC7C7] rounded-xl px-5 py-2"
                         >
                             <LuGithub />
@@ -96,6 +97,7 @@ const Card = ({
                 <div className="flex lg:hidden justify-evenly w-full mt-2.5 lg:mt-5">
                     <Link
                         href={git}
+                        target="_blank"
                         className="flex gap-2 items-center bg-black text-[#FFC7C7] rounded-xl px-5 py-2"
                     >
                         <LuGithub />
@@ -103,6 +105,7 @@ const Card = ({
                     </Link>
                     <Link
                         href={live}
+                        target="_blank"
                         className="flex gap-2 items-center bg-black text-[#FFC7C7] rounded-xl px-5 py-2"
                     >
                         <IoArrowUpOutline size={18} className="rotate-45" />
