@@ -13,7 +13,6 @@ export default function Home() {
                 <Hero />
                 <About />
                 <Projects />
-                {/* <section className="h-[100em] bg-[#220000]"></section> */}
             </main>
         </>
     );
