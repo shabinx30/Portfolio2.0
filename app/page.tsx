@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Grain from "@/components/hero/Grain";
 import Hero from "@/components/hero/Hero";
 import Nav from "@/components/Nav";
@@ -10,6 +11,7 @@ export default function Home() {
             <main>
                 <Grain />
                 <Hero />
+                <About />
                 <Projects />
                 {/* <section className="h-[100em] bg-[#220000]"></section> */}
             </main>
