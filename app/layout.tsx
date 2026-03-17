@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
-import { Notable } from "next/font/google";
+import { Notable, Geist } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
+
+const geistSans = Geist({
+    variable: "--font-geist-sans",
+    subsets: ["latin"],
+});
 
 const notable = Notable({
     weight: "400",
@@ -64,7 +69,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${notable.variable} antialiased`}
+                className={`${notable.variable} ${geistSans.variable} antialiased`}
             >
                 <LenisProvider>{children}</LenisProvider>
             </body>
