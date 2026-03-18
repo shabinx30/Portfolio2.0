@@ -14,7 +14,8 @@ const About = () => {
                     LinkedIn
                 </Link>{" "}
                 /<Link href="https://github.com/shabinx30">Github</Link> /
-                <Link href="mailto:shabeensharih@gmail.com">Gmail</Link>
+                <Link href="mailto:shabeensharih@gmail.com">Email</Link> /
+                <Link href="https://leetcode.com/u/shabeensharih/">LeetCode</Link>
             </div>
         </div>
     );

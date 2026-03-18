@@ -3,6 +3,7 @@ import Grain from "@/components/hero/Grain";
 import Hero from "@/components/hero/Hero";
 import Nav from "@/components/Nav";
 import Projects from "@/components/project/Projects";
+import Skill from "@/components/Skill";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
                 <Grain />
                 <Hero />
                 <About />
+                <Skill />
                 <Projects />
             </main>
         </>
