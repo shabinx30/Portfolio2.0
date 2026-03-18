@@ -5,7 +5,7 @@ import { FaCode } from "react-icons/fa6";
 const Skill = () => {
     return (
         <section className="pt-[6em] px-[5%]">
-            <h3 className="text-[#FF7C7C]">//Skills</h3>
+            <h3 className="text-[#FF7C7C] notable text-xs md:text-sm">//Skills</h3>
             <div className="flex items-center gap-1 mb-16 text-[#FF7C7C]">
                 {"</"}
                 <hr className="w-full h-[3px] rounded-full border-none bg-[#532f2f]" />

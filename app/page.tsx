@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Contact from "@/components/contact/Contact";
 import Grain from "@/components/hero/Grain";
 import Hero from "@/components/hero/Hero";
 import Nav from "@/components/Nav";
@@ -15,6 +16,7 @@ export default function Home() {
                 <About />
                 <Skill />
                 <Projects />
+                <Contact />
             </main>
         </>
     );
