@@ -1,0 +1,51 @@
+import { skills } from "@/const/skillData";
+import React from "react";
+import { FaCode } from "react-icons/fa6";
+
+const Skill = () => {
+    return (
+        <section className="pt-[6em] px-[5%]">
+            <h3 className="text-[#FF7C7C]">//Skills</h3>
+            <div className="flex items-center gap-1 mb-16 text-[#FF7C7C]">
+                {"</"}
+                <hr className="w-full h-[3px] rounded-full border-none bg-[#532f2f]" />
+                {">"}
+            </div>
+            <div className="flex flex-col md:flex-row gap-16 md:gap-0">
+                <div className="flex-1 flex flex-col gap-4 font-semibold md:mr-[10%]">
+                    {skills.map((skill, i) => (
+                        <React.Fragment key={i}>
+                            <div>
+                                <div className="flex justify-between items-end">
+                                    <h3>{skill.stack}</h3>
+                                    <FaCode />
+                                </div>
+                                <div className="flex flex-wrap font-mono gap-3 text-[0.9rem] text-[#a18282] mt-2">
+                                    {skill.techs.map((tech, j) => (
+                                        <p key={j}>{tech}</p>
+                                    ))}
+                                </div>
+                            </div>
+                            <hr className="text-[#532f2f]" />
+                        </React.Fragment>
+                    ))}
+                </div>
+                <div className="flex-1 min-w-1/2 lg:pr-[7%]">
+                    <p>
+                        I thrive on solving real-world problems, turning ideas
+                        into clean, maintainable code, and learning through
+                        experimentation. You&apos;ll find me building side
+                        projects, diving into new tech stacks, or simply
+                        exploring what&apos;s next in the world of web
+                        development.
+                    </p>
+                    <button className="bg-[#FF7C7C] hover:bg-[#FFC7C7] duration-200 mt-8 text-black px-5 pt-2.5 pb-3.5 notable text-sm cursor-pointer rounded-3xl">
+                        My resume
+                    </button>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Skill;

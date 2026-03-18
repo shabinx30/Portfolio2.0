@@ -21,8 +21,14 @@ const Projects = () => {
             </svg>
             <motion.section
                 ref={projectRef}
-                className="mt-[10vh] px-[2.5%] xl:px-[5%] relative"
+                className="mt-[18vh] px-[2.5%] xl:px-[5%] relative"
             >
+                <h3 className="text-[#FF7C7C]">//Works</h3>
+                <div className="flex items-center gap-1 text-[#FF7C7C]">
+                    {"</"}
+                    <hr className="w-full h-[3px] rounded-full border-none bg-[#532f2f]" />
+                    {">"}
+                </div>
                 {projectsData.map((project, index) => {
                     const targetScale =
                         1 - (projectsData.length - index) * 0.07;

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Notable, Geist } from "next/font/google";
 import "./globals.css";
-import LenisProvider from "@/components/LenisProvider";
+import { LenisProvider } from "@/components/LenisProvider";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -13,7 +13,6 @@ const notable = Notable({
     variable: "--font-notable",
     subsets: ["latin"],
 });
-
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://shabeensharih.online"),
