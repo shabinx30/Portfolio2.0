@@ -13,7 +13,7 @@ export const skills = [
     },
     {
         stack: "Backend",
-        techs: ["Node.js", "Express.js", "Nest.js", "MongoDB", "Postgres", "Firebase", "Redis"],
+        techs: ["Node.js", "Express.js", "Nest.js", "MongoDB", "PostgreSQL", "Firebase", "Redis"],
     },
     {
         stack: "Tools & Languages",

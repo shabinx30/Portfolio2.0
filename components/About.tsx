@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const About = () => {
     return (
-        <div className="md:hidden text-[#FFC7C7] text-[0.6rem] text-center mt-10 px-[5%]">
+        <div className="md:hidden text-[#FFC7C7] text-[0.6rem] text-center mt-16 px-[5%]">
             <p className="notable">
                 A Passionate{" "}
                 <span className="text-[#FF7C7C]">Full Stack Web Developer</span>
