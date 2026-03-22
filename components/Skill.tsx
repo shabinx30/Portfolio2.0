@@ -1,11 +1,14 @@
 import { skills } from "@/const/skillData";
+import Link from "next/link";
 import React from "react";
 import { FaCode } from "react-icons/fa6";
 
 const Skill = () => {
     return (
         <section className="pt-[6em] px-[5%]">
-            <h3 className="text-[#FF7C7C] notable text-xs md:text-sm">//Skills</h3>
+            <h3 className="text-[#FF7C7C] notable text-xs md:text-sm">
+                //Skills
+            </h3>
             <div className="flex items-center gap-1 mb-16 text-[#FF7C7C]">
                 {"</"}
                 <hr className="w-full h-[3px] rounded-full border-none bg-[#532f2f]" />
@@ -31,7 +34,7 @@ const Skill = () => {
                     ))}
                 </div>
                 <div className="flex-1 min-w-1/2 lg:pr-[7%]">
-                    <p>
+                    <p className="mb-8">
                         I thrive on solving real-world problems, turning ideas
                         into clean, maintainable code, and learning through
                         experimentation. You&apos;ll find me building side
@@ -39,9 +42,13 @@ const Skill = () => {
                         exploring what&apos;s next in the world of web
                         development.
                     </p>
-                    <button className="bg-[#FF7C7C] hover:bg-[#FFC7C7] duration-200 mt-8 text-black px-5 pt-2.5 pb-3.5 notable text-sm cursor-pointer rounded-3xl">
+                    <Link
+                        href="/Shabeen_Sharih_Full_Stack.pdf"
+                        target="_blank"
+                        className="bg-[#FF7C7C] hover:bg-[#FFC7C7] duration-200 text-black px-5 pt-2.5 pb-3.5 notable text-sm cursor-pointer rounded-3xl"
+                    >
                         My resume
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>

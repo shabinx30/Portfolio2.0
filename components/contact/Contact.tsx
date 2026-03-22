@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
     return (
-        <section className="mt-[5em] px-[5%] mb-[10em]">
+        <section id="contact" className="mt-[5em] px-[5%] mb-[10em]">
             <h3 className="text-[#FF7C7C] notable text-xs md:text-sm">
                 //Get In Touch
             </h3>
