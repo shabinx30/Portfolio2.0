@@ -2,18 +2,12 @@ import { skills } from "@/const/skillData";
 import Link from "next/link";
 import React from "react";
 import { FaCode } from "react-icons/fa6";
+import SkillHeader from "./SectionHeader";
 
 const Skill = () => {
     return (
         <section className="pt-[6em] px-[5%]">
-            <h3 className="text-[#FF7C7C] notable text-xs md:text-sm">
-                //Skills
-            </h3>
-            <div className="flex items-center gap-1 mb-16 text-[#FF7C7C]">
-                {"</"}
-                <hr className="w-full h-[3px] rounded-full border-none bg-[#532f2f]" />
-                {">"}
-            </div>
+            <SkillHeader heading="skill" />
             <div className="flex flex-col md:flex-row gap-16 md:gap-0">
                 <div className="flex-1 flex flex-col gap-4 font-semibold md:mr-[10%]">
                     {skills.map((skill, i) => (

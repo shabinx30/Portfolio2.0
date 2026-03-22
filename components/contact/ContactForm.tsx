@@ -112,7 +112,7 @@ const ContactForm = () => {
                     ref={messageRef}
                     id="message"
                     rows={4}
-                    className="border border-[#704141] outline-[#FF7C7C] outline-none focus:border-[#FF7C7C] p-3.5"
+                    className="border border-[#704141] min-h-[8em] max-h-[14em] outline-[#FF7C7C] outline-none focus:border-[#FF7C7C] p-3.5"
                     placeholder="Write your message"
                 ></textarea>
             </div>

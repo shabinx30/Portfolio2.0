@@ -1,18 +1,12 @@
 import Link from "next/link";
 import { LuMail } from "react-icons/lu";
 import ContactForm from "./ContactForm";
+import SectionHeader from "../SectionHeader";
 
 const Contact = () => {
     return (
         <section id="contact" className="mt-[5em] px-[5%] mb-[10em]">
-            <h3 className="text-[#FF7C7C] notable text-xs md:text-sm">
-                //Get In Touch
-            </h3>
-            <div className="flex items-center gap-1 mb-16 text-[#FF7C7C]">
-                {"</"}
-                <hr className="w-full h-[3px] rounded-full border-none bg-[#532f2f]" />
-                {">"}
-            </div>
+            <SectionHeader heading="Get-In-Touch" />
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-[5%] mt-4">
                 <div className="flex-1">
                     <h3 className="text-2xl md:text-4xl lg:text-5xl font-semibold notable">
