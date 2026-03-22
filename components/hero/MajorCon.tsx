@@ -10,6 +10,8 @@ const MajorCon = () => {
     const [isLoaded, setIsLoaded] = useState(false);
 
     useLayoutEffect(() => {
+        window.history.scrollRestoration = 'manual'
+        window.scrollTo(0, 0)
         if (!isLoaded) return;
 
         const scrollConfig = {

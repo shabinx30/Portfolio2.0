@@ -2,13 +2,13 @@ import { skills } from "@/const/skillData";
 import Link from "next/link";
 import React from "react";
 import { FaCode } from "react-icons/fa6";
-import SkillHeader from "./SectionHeader";
+import SkillHeader from "./animations/SectionHeader";
 
 const Skill = () => {
     return (
-        <section className="pt-[6em] px-[5%]">
+        <section id="skills" className="pt-[6em] px-[5%]">
             <SkillHeader heading="skill" />
-            <div className="flex flex-col md:flex-row gap-16 md:gap-0">
+            <div className="flex flex-col md:flex-row mt-16 gap-16 md:gap-0">
                 <div className="flex-1 flex flex-col gap-4 font-semibold md:mr-[10%]">
                     {skills.map((skill, i) => (
                         <React.Fragment key={i}>

@@ -17,7 +17,7 @@ export const skills = [
     },
     {
         stack: "Tools & Languages",
-        techs: ["Git", "Github", "Figma", "Javascript", "Typescript"],
+        techs: ["Git", "Github", "Figma", "Javascript", "Typescript", "VScode", "Postman"],
     },
-    { stack: "Cloud & Deployment", techs: ["AWS", "Vercel"] },
+    { stack: "Cloud & Deployment", techs: ["AWS", "Nginx", "Vercel"] },
 ];

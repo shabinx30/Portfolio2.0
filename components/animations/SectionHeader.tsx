@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-const SectionHeader = ({ heading }: { heading: string }) => {
+const SectionHeader = ({ heading }: { heading?: string }) => {
     const ref = useRef<HTMLHRElement>(null);
 
     useEffect(() => {
@@ -20,29 +20,33 @@ const SectionHeader = ({ heading }: { heading: string }) => {
                 },
             });
 
-            gsap.from(`.${heading}-text`, {
-                x: -100,
-                duration: 1,
-                ease: "power3.out",
-                stagger: 0.15,
-                scrollTrigger: {
-                    trigger: ref.current,
-                    start: "top 80%",
-                    once: true,
-                },
-            });
+            if (heading) {
+                gsap.from(`.${heading}-text`, {
+                    x: -100,
+                    duration: 1,
+                    ease: "power3.out",
+                    stagger: 0.15,
+                    scrollTrigger: {
+                        trigger: ref.current,
+                        start: "top 80%",
+                        once: true,
+                    },
+                });
+            }
         }, ref);
 
         return () => ctx.revert();
     }, []);
     return (
         <div ref={ref}>
-            <h3 className="text-[#FF7C7C] notable text-xs md:text-sm overflow-x-hidden">
-                <span className={`inline-block ${heading}-text`}>
-                    //{heading.replaceAll("-", " ")}
-                </span>
-            </h3>
-            <div className="flex items-center gap-1 mb-16 text-[#FF7C7C]">
+            {heading && (
+                <h3 className="text-[#FF7C7C] notable text-xs md:text-sm overflow-x-hidden">
+                    <span className={`inline-block ${heading}-text`}>
+                        //{heading?.replaceAll("-", " ")}
+                    </span>
+                </h3>
+            )}
+            <div className="flex items-center gap-1 text-[#FF7C7C]">
                 {"</"}
                 <hr
                     className={`${heading}-line w-full h-[3px] rounded-full border-none bg-[#532f2f]`}
