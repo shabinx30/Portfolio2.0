@@ -21,7 +21,7 @@ const Projects = () => {
                 </clipPath>
             </svg>
             <motion.section
-                id="project"
+                id="works"
                 ref={projectRef}
                 className="mt-[18vh] px-[2.5%] xl:px-[5%] relative"
             >

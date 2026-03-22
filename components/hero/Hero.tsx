@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Hero = () => {
     return (
-        <section className="h-screen hero relative bg-[#220000] pl-5 md:pl-10 overflow-hidden">
+        <section id="home" className="h-screen hero relative bg-[#220000] pl-5 md:pl-10 overflow-hidden">
             <MajorCon />
             <p className="absolute flex flex-col z-45 w-full md:w-auto left-0 md:left-auto justify-center items-center gap-4 bottom-[7em] md:bottom-[6em] text-[#FFC7C7] text-[0.5rem] md:text-[0.6rem] notable scroll parallax-scroll will-change-transform">
                 SCROLL TO KNOW MORE ABOUT ME

@@ -26,7 +26,7 @@ const Nav = () => {
         >
             <ul className="flex gap-5 justify-end items-center pr-4 pt-5 text-[#FF7C7C] notable text-[0.6rem] md:text-xs">
                 <li
-                    onClick={() => scrollTo("#project")}
+                    onClick={() => scrollTo("#works")}
                     className="hover:text-[#FFC7C7] transition-colors duration-200 cursor-pointer"
                 >
                     Projects

@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Contact from "@/components/contact/Contact";
+import Footer from "@/components/Footer";
 import Grain from "@/components/hero/Grain";
 import Hero from "@/components/hero/Hero";
 import Nav from "@/components/Nav";
@@ -18,6 +19,7 @@ export default function Home() {
                 <Projects />
                 <Contact />
             </main>
+            <Footer />
         </>
     );
 }
