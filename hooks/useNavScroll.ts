@@ -26,5 +26,5 @@ export function useNavScroll(lenis: Lenis | null, threshold = 5) {
         return () => lenis.off("scroll", onScroll);
     }, [lenis, threshold]);
 
-    return { hidden };
+    return { hidden, setHidden };
 }
