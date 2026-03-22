@@ -22,7 +22,7 @@ const Shutter = ({ isLoaded }: { isLoaded: boolean }) => {
         tl.to(el, {
             yPercent: -100,
             duration: 0.75,
-            ease: "power4.out",
+            ease: "power3.out",
         });
     }, [isLoaded]);
 
