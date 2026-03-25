@@ -4,6 +4,7 @@
 :root {
   --background: #220000;
   --foreground: #ededed;
+  color-scheme: dark;
 }
 
 @theme inline {
@@ -12,13 +13,6 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #220000;
-    --foreground: #ededed;
-  }
-} */
 
 html {
   scrollbar-gutter: stable;
@@ -35,12 +29,10 @@ body {
 
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
-  /* overflow: hidden ; */
 }
 
 .lenis.lenis-smooth [data-lenis-prevent] {
   overscroll-behavior: contain;
-  /* overflow: hidden; */
 }
 
 /* .lenis.lenis-stopped {
