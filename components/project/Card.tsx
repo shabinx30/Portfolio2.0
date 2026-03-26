@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { LuGithub } from "react-icons/lu";
 import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { IoArrowUpOutline } from "react-icons/io5";
 import { IoIosArrowRoundUp } from "react-icons/io";
 
@@ -19,7 +19,6 @@ interface ICard extends IProject {
 const Card = ({
     name,
     imageDark,
-    imageLight,
     image,
     description,
     techs,

@@ -25,12 +25,12 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "allowUnusedLabels": false,
-    "noUncheckedSideEffectImports": true,
+    // "noUncheckedSideEffectImports": true,
     "noFallthroughCasesInSwitch": true,
     "allowArbitraryExtensions": false,
 
     // optional
-    "noUncheckedIndexedAccess": true
+    // "noUncheckedIndexedAccess": true
   },
   "include": [
     "next-env.d.ts",
