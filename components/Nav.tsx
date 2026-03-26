@@ -29,12 +29,12 @@ const Nav = () => {
                     onClick={() => scrollTo("#works")}
                     className="hover:text-[#FFC7C7] transition-colors duration-200 cursor-pointer"
                 >
-                    Projects
+                    Works
                 </li>
 
                 <li
                     onClick={() => scrollTo("#contact")}
-                    className="bg-[#FFC7C7] text-black px-3 pb-2 pt-1 transition-colors duration-200 cursor-pointer rounded-xl"
+                    className="bg-[#FFC7C7] text-black px-3 pb-1.5 md:pb-2 pt-1 transition-colors duration-200 cursor-pointer rounded-xl"
                 >
                     Contact
                 </li>
