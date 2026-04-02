@@ -22,7 +22,7 @@ const Nav = () => {
                 duration: 0.4,
                 ease: [0.25, 0.1, 0.25, 1],
             }}
-            className="fixed bg-linear-to-b from-[#220000] to-transparent top-0 w-full z-70 will-change-transform"
+            className="fixed bg-linear-to-b  top-0 w-full z-70 will-change-transform"
         >
             <ul className="flex gap-5 justify-end items-center pr-4 pt-5 text-[#FF7C7C] notable text-[0.6rem] md:text-xs">
                 <li
