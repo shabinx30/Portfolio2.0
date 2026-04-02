@@ -55,7 +55,7 @@ const MajorCon = () => {
             {isLoaded && (
                 <>
                     <SplitText
-                        text="HELLO,"
+                        text="HEY,"
                         className="text-[#FFC7C7] md:text-3xl leading-16 md:leading-normal notable parallax-hello absolute top-1/30 md:top-0 will-change-transform"
                         delay={75}
                         duration={1.5}
@@ -69,7 +69,7 @@ const MajorCon = () => {
                     />
                     <SplitText
                         text={`I${"\u0027"}M SHABEEN`}
-                        className="text-[#FF7C7C] text-5xl md:text-6xl lg:text-[6.6rem] font-bold notable md:leading-10 lg:leading-12 parallax-name md:h-[0.85em] absolute top-1/40 md:top-0 will-change-transform"
+                        className="text-[#FFC7C7] text-5xl md:text-6xl lg:text-[6.6rem] font-bold notable md:leading-10 lg:leading-12 parallax-name md:h-[0.85em] absolute top-1/40 md:top-0 will-change-transform"
                         delay={75}
                         duration={1.5}
                         ease="power4.out"
