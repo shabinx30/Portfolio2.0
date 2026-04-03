@@ -29,7 +29,7 @@ const Skill = () => {
                 </div>
                 <div className="flex-1 min-w-1/2 lg:pr-[7%]">
                     <p className="mb-8">
-                        I thrive on solving real-world problems, turning ideas
+                        I thrive on solving real world problems, turning ideas
                         into clean, maintainable code, and learning through
                         experimentation. You&apos;ll find me building side
                         projects, diving into new tech stacks, or simply
