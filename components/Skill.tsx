@@ -13,7 +13,7 @@ const Skill = () => {
                     {skills.map((skill, i) => (
                         <React.Fragment key={i}>
                             <div>
-                                <div className="flex justify-between items-end">
+                                <div className="flex text-lg justify-between items-end">
                                     <h3>{skill.stack}</h3>
                                     <FaCode />
                                 </div>

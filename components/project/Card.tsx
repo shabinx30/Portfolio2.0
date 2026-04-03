@@ -48,9 +48,9 @@ const Card = ({
                     scale: cardScale,
                     top: `calc(-10% + ${index * 24}px)`,
                 }}
-                className="w-full h-[65vh] bg-[#FF7C7C] relative overflow-hidden rounded-[3rem] flex flex-col lg:flex-row items-center p-3 md:p-6 border border-[#220000] will-change-transform"
+                className="w-full h-[65vh] bg-[#441c1c] relative overflow-hidden rounded-[3rem] flex flex-col lg:flex-row items-center p-3 md:p-6 border border-[#220000] will-change-transform"
             >
-                <div className="flex-1 flex flex-col gap-2 md:gap-4 xl:gap-6 lg:pl-6 lg:pr-8 text-black">
+                <div className="flex-1 flex flex-col gap-2 md:gap-4 xl:gap-6 lg:pl-6 lg:pr-8 text-[#FFC7C7]">
                     <h3 className="text-xl md:text-2xl lg:text-3xl text-center lg:text-left font-semibold notable mb-2.5 lg:mb-5">
                         {name}
                     </h3>
@@ -60,7 +60,7 @@ const Card = ({
                     <div className="flex gap-1 justify-center md:justify-start lg:gap-2 flex-wrap">
                         {techs.map((tech, index) => (
                             <span
-                                className="bg-[#FFC7C7] text-xs md:text-sm pt-0.5 pb-1 px-2.5 rounded-lg lg:rounded-xl min-w-fit"
+                                className="bg-[#FF7C7C] text-black text-xs md:text-sm pt-0.5 pb-1 px-2.5 rounded-lg lg:rounded-xl min-w-fit"
                                 key={index}
                             >
                                 {tech}
@@ -71,7 +71,7 @@ const Card = ({
                         <Link
                             href={git}
                             target="_blank"
-                            className="flex gap-2 items-center bg-black text-[#FFC7C7] rounded-xl px-5 py-2"
+                            className="flex gap-2 items-center bg-[#FFC7C7] text-black rounded-xl px-5 py-2"
                         >
                             <LuGithub />
                             Github
@@ -96,7 +96,7 @@ const Card = ({
                             loading="lazy"
                             unoptimized
                         />
-                        <div className="absolute hidden lg:flex justify-center items-center w-[13.5%] h-[24%] rounded-full z-10 bg-[#FFC7C7] right-1 bottom-1">
+                        <div className="absolute hidden lg:flex justify-center items-center w-[13.5%] h-[24%] rounded-full z-10 bg-[#FF7C7C] right-1 bottom-1">
                             <IoIosArrowRoundUp
                                 size={46}
                                 className="text-black rotate-45"
