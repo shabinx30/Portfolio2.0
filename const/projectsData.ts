@@ -26,7 +26,7 @@ export const projectsData = [
         git: "https://github.com/shabinx30/TUNGSTEN",
         live: "https://tungsten-9vxl.onrender.com/",
         description:
-            "Architected and built an E-commerce platform from the ground up, providing an advanced shopping experience for users with full control over product management through an admin module",
+            "Architected and built an E commerce platform from the ground up, providing an advanced shopping experience for users with full control over product management through an admin module",
         techs: [
             "node.js",
             "express.js",
@@ -47,7 +47,7 @@ export const projectsData = [
         git: "https://github.com/shabinx30/CHAT_APP",
         live: "https://chat-app-taupe-zeta.vercel.app",
         description:
-            "Designed a feature-rich chat app with online/offline status, typing indicators, and file sharing. Built with a focus on real time performance and seamless user experience.",
+            "Designed a feature rich chat app with online/offline status, typing indicators, and file sharing. Built with a focus on real time performance and seamless user experience.",
         techs: [
             "react.js",
             "socket.io",
@@ -69,7 +69,7 @@ export const projectsData = [
         git: "https://github.com/shabinx30/UMS-REACT-NODE",
         live: "https://ums-react-node.vercel.app",
         description:
-            "Engineered a secure user management system with authentication, user registration, profile management, and admin controls. Implemented protected routes and role-based access control to manage user creation, editing, and deletion efficiently.",
+            "Engineered a secure user management system with authentication, user registration, profile management, and admin controls. Implemented protected routes and role based access control to manage user creation, editing, and deletion efficiently.",
         techs: [
             "react.js",
             "tailewind",
@@ -96,7 +96,7 @@ export const projectsData = [
         git: "https://github.com/shabinx30/OLX-Clone",
         live: "https://olx-shabin.vercel.app",
         description:
-            "Created a responsive online marketplace with user login/signup and product listing capabilities. Prioritized user experience by delivering a sleek, easy-to-navigate interface.",
+            "Created a responsive online marketplace with user login/signup and product listing capabilities. Prioritized user experience by delivering a sleek, easy to navigate interface.",
         techs: ["react.js", "tailewind", "firebase", "api"],
     },
 ];
