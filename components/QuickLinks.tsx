@@ -17,27 +17,27 @@ const QuickLinks = () => {
     return (
         <div className="flex-1">
             <h3 className="text-[#FF7C7C] font-semibold mb-4">Quick Links</h3>
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col gap-2 text-sm">
                 <li
-                    className="cursor-pointer"
+                    className="cursor-pointer hover:text-[#FFC7C7]"
                     onClick={() => scrollTo("#home")}
                 >
                     Home
                 </li>
                 <li
-                    className="cursor-pointer"
+                    className="cursor-pointer hover:text-[#FFC7C7]"
                     onClick={() => scrollTo("#skills")}
                 >
                     Skills
                 </li>
                 <li
-                    className="cursor-pointer"
+                    className="cursor-pointer hover:text-[#FFC7C7]"
                     onClick={() => scrollTo("#works")}
                 >
                     Works
                 </li>
                 <li
-                    className="cursor-pointer"
+                    className="cursor-pointer hover:text-[#FFC7C7]"
                     onClick={() => scrollTo("#contact")}
                 >
                     Contact

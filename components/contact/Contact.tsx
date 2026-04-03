@@ -25,10 +25,13 @@ const Contact = () => {
                             LeetCode
                         </Link>
                     </div>
-                    <div className="flex items-center gap-2 mt-2 text-[#FFC7C7]">
+                    <Link
+                        href="mailto:shabeensharih.work@gmail.com"
+                        className="flex items-center gap-2 mt-2 text-[#FFC7C7]"
+                    >
                         <LuMail size={18} className="text-[#FF7C7C]" />
                         shabeensharih.work@gmail.com
-                    </div>
+                    </Link>
                 </div>
                 <ContactForm />
             </div>
