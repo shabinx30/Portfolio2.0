@@ -50,7 +50,7 @@ const Card = ({
                 }}
                 className="w-full h-[65vh] bg-[#441c1c] relative overflow-hidden rounded-[3rem] flex flex-col lg:flex-row items-center p-3 md:p-6 border border-[#220000] will-change-transform"
             >
-                <div className="flex-1 flex flex-col gap-2 md:gap-4 xl:gap-6 lg:pl-6 lg:pr-8 text-[#FFC7C7]">
+                <div className="flex-1 flex flex-col gap-2 md:gap-4 xl:gap-4 lg:pl-6 lg:pr-8 text-[#FFC7C7]">
                     <h3 className="text-xl md:text-2xl lg:text-3xl text-center lg:text-left font-semibold notable mb-2.5 lg:mb-5">
                         {name}
                     </h3>
@@ -60,7 +60,7 @@ const Card = ({
                     <div className="flex gap-1 justify-center md:justify-start lg:gap-2 flex-wrap">
                         {techs.map((tech, index) => (
                             <span
-                                className="bg-[#FF7C7C] text-black text-xs md:text-sm pt-0.5 pb-1 px-2.5 rounded-lg lg:rounded-xl min-w-fit"
+                                className="bg-[#FF7C7C] text-black text-xs md:text-sm pt-0.5 pb-1 px-2.5 rounded-lg min-w-fit"
                                 key={index}
                             >
                                 {tech}
