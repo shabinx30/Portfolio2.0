@@ -8,9 +8,9 @@ const Experience = () => {
             <div className="mt-10 px-[2.5%] md:px-[10%]">
                 <div className="flex flex-col justify-center items-center">
                     <div className="flex justify-between items-start w-full md:w-2/3">
-                        <div className="font-semibold text-lg">
+                        <div className="font-semibold text-base md:text-lg">
                             MERN Stack Developer
-                            <h5 className="text-[#a18282] text-base font-medium">
+                            <h5 className="text-[#a18282] text-sm font-medium">
                                 Trainee, Brototype
                             </h5>
                         </div>
