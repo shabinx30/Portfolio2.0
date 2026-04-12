@@ -1,5 +1,48 @@
 export const projectsData = [
     {
+        name: "Medic Scanner",
+        imageDark: "/project/medic_scanner(dark).png",
+        imageLight: "/project/medic_scanner(light).png",
+        git: "https://github.com/shabinx30/MedicScanner",
+        live: "https://medic-scanner.vercel.app",
+        description: (
+            <>
+                Medic Scanner is a high performance{" "}
+                <span className="font-semibold text-white">
+                    Next.js & TypeScript
+                </span>{" "}
+                app for pharmaceutical safety, utilizing{" "}
+                <span className="font-semibold text-white">OpenCV.js</span> and
+                optimized <span className="font-semibold text-white">OCR</span>{" "}
+                to extract medicine data in real-time. It validates batch
+                numbers against{" "}
+                <span className="font-semibold text-white">CDSCO</span>{" "}
+                regulatory databases via a scalable{" "}
+                <span className="font-semibold text-white">Node.js</span>{" "}
+                backend. This project demonstrates expertise in computer vision,
+                Web Workers for{" "}
+                <span className="font-semibold text-white">
+                    UI responsiveness
+                </span>
+                , and{" "}
+                <span className="font-semibold text-white">
+                    production-ready
+                </span>{" "}
+                hardware integration for reliable data extraction.
+            </>
+        ),
+        techs: [
+            "next.js",
+            "open cv",
+            "mongodb",
+            "node.js",
+            "ai-integration",
+            "typescript",
+            "express",
+            "tailewind",
+        ],
+    },
+    {
         name: "Collabify",
         imageDark: "/project/second_project(dark).png",
         imageLight: "/project/second_project(light).png",
@@ -46,8 +89,13 @@ export const projectsData = [
         imageLight: "/project/convo(light).png",
         git: "https://github.com/shabinx30/CHAT_APP",
         live: "https://chat-app-taupe-zeta.vercel.app",
-        description:
-            "Designed a feature rich chat app with online/offline status, typing indicators, and file sharing. Built with a focus on real time performance and seamless user experience.",
+        description: (
+            <>
+                Designed a feature rich <span className="font-semibold text-white">real-time</span> chat app with <span className="font-semibold text-white">online/offline</span> status,
+                <span className="font-semibold text-white">typing indicators</span>, and <span className="font-semibold text-white">file sharing</span>. Built with a focus on real
+                time performance and seamless user experience.
+            </>
+        ),
         techs: [
             "react.js",
             "socket.io",
@@ -88,15 +136,6 @@ export const projectsData = [
         live: "https://netflix-shabin.vercel.app",
         description:
             "Crafted a dynamic video streaming platform with user authentication, movie browsing, trailer viewing, and a personalized favorites section. Focused on delivering a responsive and visually appealing user interface for enhanced user engagement.",
-        techs: ["react.js", "tailewind", "firebase", "api"],
-    },
-    {
-        name: "OLX",
-        image: "/project/olx_clone.png",
-        git: "https://github.com/shabinx30/OLX-Clone",
-        live: "https://olx-shabin.vercel.app",
-        description:
-            "Created a responsive online marketplace with user login/signup and product listing capabilities. Prioritized user experience by delivering a sleek, easy to navigate interface.",
         techs: ["react.js", "tailewind", "firebase", "api"],
     },
 ];

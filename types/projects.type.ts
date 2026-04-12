@@ -1,3 +1,5 @@
+import React from 'react';
+
 export interface IProject {
     name: string;
     imageDark?: string;
@@ -5,6 +7,6 @@ export interface IProject {
     image?: string;
     git: string;
     live: string;
-    description: string;
+    description: string | React.ReactNode;
     techs: string[]
 }

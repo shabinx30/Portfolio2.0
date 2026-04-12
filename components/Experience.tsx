@@ -14,8 +14,8 @@ const Experience = () => {
                                 Trainee, Brototype
                             </h5>
                         </div>
-                        <span className="text-[#a18282] flex items-center gap-2">
-                            <HiMiniCalendarDateRange size={20} />
+                        <span className="text-[#a18282] text-sm md:text-base flex items-center gap-2">
+                            <HiMiniCalendarDateRange className="md:text-lg" />
                             2024 - 2025
                         </span>
                     </div>
