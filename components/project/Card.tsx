@@ -91,10 +91,9 @@ const Card = ({
                             className="h-full w-full object-cover rounded-4xl mobile-clip"
                             src={(imageDark as string) || (image as string)}
                             alt="project image"
-                            width={100}
-                            height={100}
+                            width={650}
+                            height={650}
                             loading="lazy"
-                            unoptimized
                         />
                         <div className="absolute hidden lg:flex justify-center items-center w-[13.5%] h-[24%] rounded-full z-10 bg-[#FF7C7C] right-1 bottom-1">
                             <IoIosArrowRoundUp

@@ -99,9 +99,8 @@ const MajorCon = () => {
                 <Image
                     src="/Me_red_no_bg.png"
                     alt="Hero"
-                    unoptimized
-                    width={100}
-                    height={100}
+                    width={2752}
+                    height={1536}
                     loading="eager"
                     onLoad={() => setIsLoaded(true)}
                     priority
