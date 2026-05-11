@@ -1,6 +1,10 @@
 import { HiOutlineChevronDoubleDown } from "react-icons/hi2";
 import MajorCon from "./MajorCon";
 import Link from "next/link";
+import { SiLeetcode } from "react-icons/si";
+import { FiLinkedin } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
+import { FiMail } from "react-icons/fi";
 
 const Hero = () => {
     return (
@@ -17,6 +21,10 @@ const Hero = () => {
                 />
             </p>
             <div className="absolute hidden md:block md:top-auto md:bottom-[5em] z-41 md:right-[3em] w-[35em] md:text-center text-left text-[#FFC7C7] text-[0.6rem] md:text-xs scroll parallax-des will-change-transform">
+                <div className="notable py-2 px-5 bg-[#8a8a8a4e] w-fit mx-auto mb-4 flex gap-3 items-center rounded-2xl backdrop-blur-sm">
+                    <span className="w-2 h-2 bg-green-300 animate-ping rounded-full"></span>{" "}
+                    Open to work
+                </div>
                 <p className="notable leading-normal">
                     I craft fast, scalable, and user friendly web applications
                     with modern{" "}
@@ -30,14 +38,14 @@ const Hero = () => {
                         Node.js.
                     </span>
                 </p>
-                <div className="flex gap-4 justify-center mt-4 text-[0.9rem]">
+                <div className="flex gap-4 justify-evenly items-center mt-4 text-lg">
                     <Link href="https://www.linkedin.com/in/shabeen-sharih/">
-                        LinkedIn
+                        <FiLinkedin />
                     </Link>{" "}
-                    /<Link href="https://github.com/shabinx30">Github</Link> /
-                    <Link href="mailto:shabeensharih@gmail.com">Email</Link> /
+                    •<Link href="https://github.com/shabinx30"><FiGithub /></Link> •
+                    <Link href="mailto:shabeensharih@gmail.com"><FiMail /></Link> •
                     <Link href="https://leetcode.com/u/shabeensharih/">
-                        LeetCode
+                        <SiLeetcode />
                     </Link>
                 </div>
             </div>

@@ -8,7 +8,9 @@ export const skills = [
             "Next.js",
             "Tailwind",
             "Bootstrap",
+            "Shadcn",
             "Materialui",
+            "OpenCV"
         ],
     },
     {
@@ -17,7 +19,7 @@ export const skills = [
     },
     {
         stack: "Tools & Languages",
-        techs: ["Git", "Github", "Figma", "Javascript", "Typescript", "VScode", "Postman"],
+        techs: ["Git", "Github", "Figma", "VScode", "Postman", "Javascript", "Typescript"],
     },
     { stack: "Cloud & Deployment", techs: ["AWS", "Nginx", "Vercel"] },
 ];
