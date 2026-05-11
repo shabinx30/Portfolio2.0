@@ -2,6 +2,8 @@ import Link from "next/link";
 import { LuMail } from "react-icons/lu";
 import ContactForm from "./ContactForm";
 import SectionHeader from "../animations/SectionHeader";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { SiLeetcode } from "react-icons/si";
 
 const Contact = () => {
     return (
@@ -15,14 +17,17 @@ const Contact = () => {
                     <p className="text-[#a18282] mt-4">
                         Let's build something together
                     </p>
-                    <div className="flex gap-4 mt-16 text-[0.9rem]">
-                        <Link href="https://www.linkedin.com/in/shabeen-sharih/">
-                            LinkedIn
+                    <div className="flex gap-4 items-center mt-16 text-lg">
+                        <Link title="LinkedIn" href="https://www.linkedin.com/in/shabeen-sharih/">
+                            <FiLinkedin />
                         </Link>{" "}
-                        /<Link href="https://github.com/shabinx30">Github</Link>{" "}
-                        /
-                        <Link href="https://leetcode.com/u/shabeensharih/">
-                            LeetCode
+                        •
+                        <Link title="GitHub" href="https://github.com/shabinx30">
+                            <FiGithub />
+                        </Link>{" "}
+                        •
+                        <Link title="LeetCode" href="https://leetcode.com/u/shabeensharih/">
+                            <SiLeetcode />
                         </Link>
                     </div>
                     <Link
