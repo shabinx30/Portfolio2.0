@@ -60,7 +60,7 @@ const Footer = () => {
             <hr className="project-line w-full h-[2px] rounded-full border-none bg-[#532f2f]" />
             <div className="my-4 flex text-[#a18282] text-xs md:text-sm justify-between">
                 <p>All rights reserved &copy; 2025 shabeensharih.online</p>
-                <Link className="text-white" href="/404">
+                <Link href="/404">
                     404
                 </Link>
             </div>

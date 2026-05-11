@@ -41,7 +41,7 @@ const Skill = () => {
                         target="_blank"
                         className="bg-[#FF7C7C] hover:bg-[#FFC7C7] duration-200 text-black px-5 pt-2.5 pb-3.5 notable text-sm cursor-pointer rounded-3xl"
                     >
-                        My resume
+                        Resume
                     </Link>
                 </div>
             </div>
