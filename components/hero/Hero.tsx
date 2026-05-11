@@ -39,12 +39,12 @@ const Hero = () => {
                     </span>
                 </p>
                 <div className="flex gap-4 justify-evenly items-center mt-4 text-lg">
-                    <Link href="https://www.linkedin.com/in/shabeen-sharih/">
+                    <Link title="LinkedIn" href="https://www.linkedin.com/in/shabeen-sharih/">
                         <FiLinkedin />
                     </Link>{" "}
-                    •<Link href="https://github.com/shabinx30"><FiGithub /></Link> •
-                    <Link href="mailto:shabeensharih@gmail.com"><FiMail /></Link> •
-                    <Link href="https://leetcode.com/u/shabeensharih/">
+                    •<Link title="GitHub" href="https://github.com/shabinx30"><FiGithub /></Link> •
+                    <Link title="Mail" href="mailto:shabeensharih@gmail.com"><FiMail /></Link> •
+                    <Link title="LeetCode" href="https://leetcode.com/u/shabeensharih/">
                         <SiLeetcode />
                     </Link>
                 </div>

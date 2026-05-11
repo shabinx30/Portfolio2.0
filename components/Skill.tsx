@@ -17,9 +17,9 @@ const Skill = () => {
                                     <h3>{skill.stack}</h3>
                                     <FaCode />
                                 </div>
-                                <div className="flex flex-wrap font-mono gap-3 text-[0.9rem] text-[#a18282] mt-2">
+                                <div className="flex flex-wrap font-mono gap-3.5 text-[0.9rem] text-[#a18282] mt-4">
                                     {skill.techs.map((tech, j) => (
-                                        <p key={j}>{tech}</p>
+                                        <p key={j} className="leading-[0.75em]">{tech}</p>
                                     ))}
                                 </div>
                             </div>

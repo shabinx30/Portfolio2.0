@@ -10,6 +10,7 @@ export const skills = [
             "Bootstrap",
             "Shadcn",
             "Materialui",
+            "Redux",
             "OpenCV"
         ],
     },
